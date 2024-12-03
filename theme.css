@@ -14,27 +14,27 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Beyaz bir katman (0.2 opaklık) */
+    background: rgba(255, 255, 255, 0.4); /* Beyaz katman (0.4 opaklık) */
     z-index: -1; /* Katmanın arka planda kalması */
 }
 
 /* Discord'un tüm arayüz öğelerini şeffaf yap */
 .theme-dark, .theme-light {
-    --background-primary: rgba(0, 0, 0, 0.6) !important; /* %60 siyah şeffaf */
-    --background-secondary: rgba(0, 0, 0, 0.4) !important; /* %40 siyah şeffaf */
-    --background-tertiary: rgba(0, 0, 0, 0.3) !important; /* %30 siyah şeffaf */
-    --background-floating: rgba(0, 0, 0, 0.2) !important; /* %20 siyah şeffaf */
+    --background-primary: rgba(0, 0, 0, 0.5) !important; /* %50 siyah şeffaf */
+    --background-secondary: rgba(0, 0, 0, 0.3) !important; /* %30 siyah şeffaf */
+    --background-tertiary: rgba(0, 0, 0, 0.2) !important; /* %20 siyah şeffaf */
+    --background-floating: rgba(0, 0, 0, 0.1) !important; /* %10 siyah şeffaf */
 }
 
 /* Mesaj bölümlerine saydamlık ekle */
 .chatContent-a9vAAp, .container-2Thooq, .sidebar-2K8pFh {
-    background: rgba(0, 0, 0, 0.5) !important; /* %50 siyah şeffaf */
+    background: rgba(0, 0, 0, 0.4) !important; /* %40 siyah şeffaf */
     backdrop-filter: blur(10px); /* Hafif bulanıklık efekti */
 }
 
 /* Sunucu listesi ve diğer bölümler için şeffaflık */
 .scrollbar-2rkZSL, .container-3baos1 {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
     backdrop-filter: blur(8px);
 }
 
