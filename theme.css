@@ -38,6 +38,12 @@ body::before {
     backdrop-filter: blur(8px);
 }
 
+/* Sunucu profilleri üzerine gelindiğinde şeffaflık kaldır */
+.listItem-2P_4kh:hover, .listItemWrapper-3d87LP:hover {
+    background: rgba(0, 0, 0, 1) !important; /* Tam opaklık */
+    backdrop-filter: none !important; /* Bulanıklık kaldırıldı */
+}
+
 /* Yazı rengini kontrast oluşturacak şekilde ayarla */
 .theme-dark {
     --text-normal: #ffffff !important; /* Beyaz yazı rengi */
