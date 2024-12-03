@@ -5,14 +5,29 @@ body {
     background-attachment: fixed;
 }
 
+.theme-dark, .theme-light {
+    --background-primary: transparent !important; /* Şeffaflık ekler */
+    --background-secondary: transparent !important;
+    --background-tertiary: transparent !important;
+}
+
+/* Discord'un katmanlarının tamamında şeffaflık sağlamak için */
+.container-2Thooq, .sidebar-2K8pFh, .content-98HsJk {
+    background: rgba(0, 0, 0, 0.7) !important; /* %70 saydam */
+    backdrop-filter: blur(10px); /* Hafif bulanıklık efekti */
+}
+
+/* Mesajlar bölümü için şeffaflık */
+.chatContent-a9vAAp {
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Tema içindeki yazı rengini kontrol edin */
 .theme-dark {
-    --background-primary: rgba(0, 0, 0, 0.8);
-    --background-secondary: rgba(0, 0, 0, 0.6);
-    --text-normal: #ffffff;
+    --text-normal: #ffffff !important;
 }
 
 .theme-light {
-    --background-primary: rgba(255, 255, 255, 0.8);
-    --background-secondary: rgba(255, 255, 255, 0.6);
-    --text-normal: #000000;
+    --text-normal: #000000 !important;
 }
