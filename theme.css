@@ -38,10 +38,10 @@ body::before {
     backdrop-filter: blur(8px);
 }
 
-/* Sunucu profilleri üzerine gelindiğinde şeffaflık kaldır */
-.listItem-2P_4kh:hover, .listItemWrapper-3d87LP:hover {
-    background: rgba(0, 0, 0, 1) !important; /* Tam opaklık */
-    backdrop-filter: none !important; /* Bulanıklık kaldırıldı */
+/* Sunucu profilleri ve öğeler üzerine gelindiğinde şeffaflık kaldır */
+.sidebar-2K8pFh:hover, .container-3baos1:hover {
+    background: rgba(0, 0, 0, 1) !important; /* Şeffaflığı kaldır */
+    backdrop-filter: none !important; /* Bulanıklık kaldır */
 }
 
 /* Yazı rengini kontrast oluşturacak şekilde ayarla */
