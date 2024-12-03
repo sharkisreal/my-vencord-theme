@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://i.postimg.cc/7YVdsWCS/shadows-army-solo-leveling.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.theme-dark {
+    --background-primary: rgba(0, 0, 0, 0.8);
+    --background-secondary: rgba(0, 0, 0, 0.6);
+    --text-normal: #ffffff;
+}
+
+.theme-light {
+    --background-primary: rgba(255, 255, 255, 0.8);
+    --background-secondary: rgba(255, 255, 255, 0.6);
+    --text-normal: #000000;
+}
