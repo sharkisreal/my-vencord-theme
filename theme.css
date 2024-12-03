@@ -1,3 +1,4 @@
+/* Arka plan resmi */
 body {
     background-image: url("https://github.com/sharkisreal/myimg/raw/main/shadows-army-solo-leveling.jpg");
     background-size: cover;
@@ -5,29 +6,31 @@ body {
     background-attachment: fixed;
 }
 
+/* Discord'un tüm arayüz öğelerini şeffaf yap */
 .theme-dark, .theme-light {
-    --background-primary: transparent !important; /* Şeffaflık ekler */
-    --background-secondary: transparent !important;
-    --background-tertiary: transparent !important;
+    --background-primary: rgba(0, 0, 0, 0.6) !important; /* %60 siyah şeffaf */
+    --background-secondary: rgba(0, 0, 0, 0.4) !important; /* %40 siyah şeffaf */
+    --background-tertiary: rgba(0, 0, 0, 0.3) !important; /* %30 siyah şeffaf */
+    --background-floating: rgba(0, 0, 0, 0.2) !important; /* %20 siyah şeffaf */
 }
 
-/* Discord'un katmanlarının tamamında şeffaflık sağlamak için */
-.container-2Thooq, .sidebar-2K8pFh, .content-98HsJk {
-    background: rgba(0, 0, 0, 0.7) !important; /* %70 saydam */
+/* Mesaj bölümlerine saydamlık ekle */
+.chatContent-a9vAAp, .container-2Thooq, .sidebar-2K8pFh {
+    background: rgba(0, 0, 0, 0.5) !important; /* %50 siyah şeffaf */
     backdrop-filter: blur(10px); /* Hafif bulanıklık efekti */
 }
 
-/* Mesajlar bölümü için şeffaflık */
-.chatContent-a9vAAp {
+/* Sunucu listesi ve diğer bölümler için şeffaflık */
+.scrollbar-2rkZSL, .container-3baos1 {
     background: rgba(0, 0, 0, 0.5) !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
 }
 
-/* Tema içindeki yazı rengini kontrol edin */
+/* Yazı rengini kontrast oluşturacak şekilde ayarla */
 .theme-dark {
-    --text-normal: #ffffff !important;
+    --text-normal: #ffffff !important; /* Beyaz yazı rengi */
 }
 
 .theme-light {
-    --text-normal: #000000 !important;
+    --text-normal: #000000 !important; /* Siyah yazı rengi */
 }
