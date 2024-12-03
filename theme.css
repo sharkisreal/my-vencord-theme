@@ -4,6 +4,18 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Beyaz bir katman (0.2 opaklık) */
+    z-index: -1; /* Katmanın arka planda kalması */
 }
 
 /* Discord'un tüm arayüz öğelerini şeffaf yap */
