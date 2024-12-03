@@ -7,31 +7,25 @@ body {
     position: relative;
 }
 
-/* Discord'un tüm arayüz öğelerini şeffaf yap */
+/* Discord'un arayüzünü tamamen opak yap */
 .theme-dark, .theme-light {
-    --background-primary: rgba(0, 0, 0, 0.1) !important; /* %10 siyah şeffaf */
-    --background-secondary: rgba(0, 0, 0, 0.05) !important; /* %5 siyah şeffaf */
-    --background-tertiary: rgba(0, 0, 0, 0.03) !important; /* %3 siyah şeffaf */
-    --background-floating: rgba(0, 0, 0, 0.02) !important; /* %2 siyah şeffaf */
+    --background-primary: transparent !important;
+    --background-secondary: transparent !important;
+    --background-tertiary: transparent !important;
+    --background-floating: transparent !important;
 }
 
-/* Mesaj bölümlerine saydamlık ekle */
-.chatContent-a9vAAp, .container-2Thooq, .sidebar-2K8pFh {
-    background: rgba(0, 0, 0, 0.08) !important; /* %8 siyah şeffaf */
-    backdrop-filter: blur(5px); /* Hafif bulanıklık efekti */
-}
-
-/* Sunucu listesi ve diğer bölümler için şeffaflık */
-.scrollbar-2rkZSL, .container-3baos1 {
-    background: rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: blur(3px);
+/* Mesaj bölümleri ve sunucu listesi */
+.chatContent-a9vAAp, .container-2Thooq, .sidebar-2K8pFh, .scrollbar-2rkZSL, .container-3baos1 {
+    background: transparent !important; /* Tamamen şeffaf */
+    backdrop-filter: none !important; /* Bulanıklık etkisini kaldır */
 }
 
 /* Yazı rengini kontrast oluşturacak şekilde ayarla */
 .theme-dark {
-    --text-normal: #ffffff !important; /* Beyaz yazı rengi */
+    --text-normal: #ffffff !important; /* Beyaz yazı */
 }
 
 .theme-light {
-    --text-normal: #000000 !important; /* Siyah yazı rengi */
+    --text-normal: #000000 !important; /* Siyah yazı */
 }
